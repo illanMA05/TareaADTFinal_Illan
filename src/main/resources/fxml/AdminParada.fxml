@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luisdbb.tarea3AD2024base.controller.AdminParadaController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="663.0">
+         <children>
+            <GridPane prefHeight="408.0" prefWidth="663.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="252.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="411.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #5FE081; -fx-border-color: #000000; -fx-border-width: 4 0 4 4;" GridPane.rowSpan="3">
+                     <children>
+                        <GridPane prefHeight="408.0" prefWidth="252.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="48.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="117.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="101.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="ADMIN PARADA" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Impact" size="24.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="15.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="btnCerrarSesion" onAction="#clickBtnCerrarSesion" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_CERRAR SESION" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" left="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Label text="NOMBRE PARADA: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                              <Label layoutX="24.0" layoutY="146.0" text="REGION: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="88.0" layoutY="206.0" text="RESPONSABLE: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRegion" text="Label" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="lblNomParada" layoutX="142.0" layoutY="206.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="lblResponsable" layoutX="142.0" layoutY="206.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="Impact" size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-border-width: 4px;" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                     <children>
+                        <GridPane prefHeight="408.0" prefWidth="411.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="167.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="121.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="123.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TableView fx:id="tablaPeres" prefHeight="200.0" prefWidth="286.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+                                <columns>
+                                  <TableColumn fx:id="clmNombre" editable="false" prefWidth="75.0" text="Nombre" />
+                                  <TableColumn fx:id="clmNomUsu" editable="false" prefWidth="114.0" text="Nombre Usuario" />
+                                    <TableColumn fx:id="clmNacionalidad" editable="false" prefWidth="108.0" text="Nacionalidad" />
+                                    <TableColumn fx:id="clmEmail" editable="false" prefWidth="93.0" text="E-mail" />
+                                </columns>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TableView>
+                              <Label text="DATOS PARADA" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Impact" size="24.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets top="30.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="btnSellarPeregrino" onAction="#clickBtnSellar" style="-fx-background-color: #4ACD6C; -fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_SELLAR PEREGRINO" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <DatePicker fx:id="fechaMenor" editable="false" maxWidth="120.0" promptText="fecha 1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                              <Label text="Filtro rango de fechas" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="fechaMayor" editable="false" layoutX="35.0" layoutY="135.0" maxWidth="120.0" promptText="fecha 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Button fx:id="btnFiltrar" layoutX="150.0" layoutY="360.0" onAction="#clickBtnFiltrar" style="-fx-background-color: #4ACD6C; -fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_FILTRAR" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                                                           <Button fx:id="btnAyuda" layoutX="189.0" layoutY="287.0" onAction="#clickBtnAyuda" style="-fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 100px; -fx-background-radius: 100px;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Ayuda.png" />
+                                       </image></ImageView>
+                                     <image>
+<!--                                     <Image url="@../images/Ayuda.png" /> -->
+                          		 </image> 
+                                    
+                                 </graphic>
+                                 <GridPane.margin>
+                                    <Insets right="15.0" top="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnEnvios" layoutX="101.0" layoutY="360.0" onAction="#clickBtnVerEnvios" style="-fx-background-color: #4ACD6C; -fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="VER ENVIOS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnCarnets" layoutX="258.0" layoutY="360.0" onAction="#clickBtnCarnets" style="-fx-background-color: #4ACD6C; -fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="VER CARNETS" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

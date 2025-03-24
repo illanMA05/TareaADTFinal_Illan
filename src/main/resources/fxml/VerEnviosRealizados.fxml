@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luisdbb.tarea3AD2024base.controller.EnviosRealizadosController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="663.0" style="-fx-border-color: #000000; -fx-border-width: 4;">
+         <children>
+            <GridPane layoutX="-1.0" layoutY="-1.0" prefHeight="408.0" prefWidth="663.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="252.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="411.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-border-width: 4px;" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                     <children>
+                        <GridPane prefHeight="408.0" prefWidth="411.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="175.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="138.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="98.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="ENVIOS REALIZADOS" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Impact" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="tablaEnvios" prefHeight="136.0" prefWidth="362.0" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                <columns>
+                                  <TableColumn fx:id="clmId" prefWidth="32.0" text="ID" />
+                                  <TableColumn fx:id="clmPeso" prefWidth="53.0" text="PESO" />
+                                    <TableColumn fx:id="clmVolumen" prefWidth="69.0" text="VOLUMEN" />
+                                    <TableColumn fx:id="clmUrgente" prefWidth="43.0" text="URGE" />
+                                    <TableColumn fx:id="clmDireccion" minWidth="0.0" prefWidth="95.0" text="DIRECCION" />
+                                    <TableColumn fx:id="clmLocalidad" prefWidth="88.0" text="LOCALIDAD" />
+                                </columns>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </GridPane.margin>
+                              </TableView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <GridPane prefHeight="408.0" prefWidth="283.0" style="-fx-background-color: #5FE081; -fx-border-color: #000000; -fx-border-width: 4 0 4 4;" GridPane.rowSpan="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="48.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="101.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="ADMIN PARADA" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="Impact" size="24.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="15.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button fx:id="btnVolver" onAction="#clickBtnVolver" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_VOLVER" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="25.0" left="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Label text="NOMBRE PARADA: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                        <Label layoutX="24.0" layoutY="146.0" text="REGION: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="88.0" layoutY="206.0" text="RESPONSABLE: " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblRegion" text="Label" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="lblNomParada" layoutX="142.0" layoutY="206.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="lblResponsable" layoutX="142.0" layoutY="206.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="Impact" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

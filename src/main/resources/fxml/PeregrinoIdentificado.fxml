@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luisdbb.tarea3AD2024base.controller.PeregrinoIdentificadoController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="663.0" style="-fx-border-color: #000000; -fx-border-width: 4px;">
+         <children>
+            <GridPane prefHeight="408.0" prefWidth="663.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="¡¡¡ BIENVENIDO PEREGRINO !!!" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="151.0" prefWidth="373.0" style="-fx-border-color: #008C00; -fx-background-color: #5FE081; -fx-border-width: 10px;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <children>
+                        <GridPane prefHeight="285.0" prefWidth="490.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="101.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="TUS DATOS" textAlignment="CENTER" underline="true" GridPane.columnSpan="4" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnExportarDatos" onAction="#exportarCarnet" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="EXPORTAR _DATOS" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnEditar" onAction="#clickBtnEditar" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_EDITAR" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" right="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Label underline="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="37.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              	<image>
+                                    <Image url="@../images/perfil.png" />
+                          		 </image>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin> 
+                              </ImageView>
+                              <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="207.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                 <image>
+                                    <Image url="@../images/paises.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="207.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                 <image>
+                                    <Image url="@../images/email.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <Label fx:id="lblNombre" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets right="40.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblEmail" layoutX="244.0" layoutY="87.0" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblNacionalidad" layoutX="244.0" layoutY="140.0" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="btnCerrarSesion" onAction="#clickBtnCerrarSesion" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_CERRAR SESION" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                                 <Button fx:id="btnAyuda" layoutX="189.0" layoutY="287.0" onAction="#clickBtnAyuda" style="-fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 100px; -fx-background-radius: 100px;" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" />
+                                     <image>
+                                    <Image url="@../images/Ayuda.png" />
+                          		 </image> 
+                                    
+                                 </graphic>
+                                 <GridPane.margin>
+                                    <Insets right="15.0" top="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

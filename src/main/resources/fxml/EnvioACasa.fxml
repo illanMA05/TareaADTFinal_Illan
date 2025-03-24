@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luisdbb.tarea3AD2024base.controller.EnvioACasaController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="663.0" style="-fx-border-width: 4; -fx-border-color: #000000;">
+         <children>
+            <GridPane prefHeight="408.0" prefWidth="663.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="276.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="55.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="311.0" prefWidth="516.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <children>
+                        <GridPane prefHeight="340.0" prefWidth="542.0" style="-fx-border-color: #008C00; -fx-border-width: 10; -fx-background-color: #5FE081;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="34.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="132.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="31.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="142.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="31.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="132.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="34.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button onAction="#clickBtnAceptar" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_ACEPTAR" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <TextField fx:id="txtPeso" promptText="KG" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label text="PESO" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="checkUrgente" mnemonicParsing="false" prefHeight="17.0" prefWidth="83.0" text="URGENTE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets top="65.0" />
+                                 </GridPane.margin>
+                              </CheckBox>
+                              <Label layoutX="45.0" layoutY="78.0" text="ENVIO URGENTE?" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets top="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label layoutX="51.0" layoutY="78.0" prefHeight="23.0" prefWidth="74.0" text="VOLUMEN" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAncho" promptText="ANCHO" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="15.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="txtLargo" layoutX="206.0" layoutY="150.0" promptText="LARGO" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="txtProfundidad" layoutX="206.0" layoutY="150.0" promptText="PROFUNDIDAD" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets top="65.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label layoutX="206.0" layoutY="78.0" prefHeight="23.0" prefWidth="85.0" text="DIRECCION" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtDireccion" layoutX="211.0" layoutY="103.0" promptText="DIRECCION" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label layoutX="380.0" layoutY="78.0" prefHeight="23.0" prefWidth="85.0" text="LOCALIDAD" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Impact" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets top="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="txtLocalidad" layoutX="380.0" layoutY="103.0" promptText="LOCALIDAD" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets top="65.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="ENVIO A CASA" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

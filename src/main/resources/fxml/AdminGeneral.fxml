@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luisdbb.tarea3AD2024base.controller.AdminGeneralController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="663.0" style="-fx-border-color: #000000; -fx-border-width: 4;">
+         <children>
+            <GridPane prefHeight="408.0" prefWidth="663.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="20.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="¡¡¡ BIENVENIDO ADMIN !!!" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="151.0" prefWidth="373.0" style="-fx-border-color: #008C00; -fx-background-color: #5FE081; -fx-border-width: 10px;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                     <children>
+                        <GridPane prefHeight="285.0" prefWidth="490.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="101.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+<<<<<<< HEAD
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label underline="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+=======
+                              <RowConstraints maxHeight="67.0" minHeight="8.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label underline="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+>>>>>>> 9857efc (ExistDB y MongoDB realizado)
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+<<<<<<< HEAD
+                              <Button fx:id="btnCerrarSesion" onAction="#clickBtnCerrarSesion" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_CERRAR SESION" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+=======
+                              <Button fx:id="btnCerrarSesion" onAction="#clickBtnCerrarSesion" prefWidth="123.0" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_CERRAR SESION" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+>>>>>>> 9857efc (ExistDB y MongoDB realizado)
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+<<<<<<< HEAD
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnAñadirParada" onAction="#clickBtnAñadirParada" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_AÑADIR PARADA" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+=======
+                                    <Insets top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnAñadirParada" onAction="#clickBtnAñadirParada" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="_AÑADIR PARADA" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+>>>>>>> 9857efc (ExistDB y MongoDB realizado)
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                                  <Button fx:id="btnAyuda" onAction="#clickBtnAyuda" style="-fx-border-color: #018825; -fx-border-width: 2px; -fx-border-radius: 100px; -fx-background-radius: 100px;" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            						<font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <GridPane.margin>
+                                                <Insets right="15.0" top="15.0" />
+                                             </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Ayuda.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                          </Button>
+<<<<<<< HEAD
+                              <Button fx:id="btnEditarServicio" layoutX="194.0" layoutY="175.0" onAction="#clickBtnEditarServicio" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="EDITAR SERVICIO" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+=======
+                              <Button fx:id="btnEditarServicio" layoutX="194.0" layoutY="175.0" onAction="#clickBtnEditarServicio" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="EDITAR SERVICIO" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+>>>>>>> 9857efc (ExistDB y MongoDB realizado)
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+<<<<<<< HEAD
+                                    <Insets bottom="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnNuevoServicio" layoutX="194.0" layoutY="129.0" onAction="#clickBtnNuevoServicio" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="NUEVO SERVICIO" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+=======
+                                    <Insets bottom="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="btnNuevoServicio" layoutX="194.0" layoutY="129.0" onAction="#clickBtnNuevoServicio" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="NUEVO SERVICIO" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBackup" layoutX="198.0" layoutY="226.0" onAction="#clickBtnBackUp" prefWidth="123.0" style="-fx-border-color: #018825; -fx-border-width: 4px; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="BACKUP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+>>>>>>> 9857efc (ExistDB y MongoDB realizado)
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
