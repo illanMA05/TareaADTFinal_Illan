@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 
 import com.luisdbb.tarea3AD2024base.modelo.Estancias;
+import com.luisdbb.tarea3AD2024base.modelo.Paradas;
 import com.luisdbb.tarea3AD2024base.modelo.Peregrino;
 import com.luisdbb.tarea3AD2024base.repositorios.EstanciasRepository;
 
@@ -27,5 +28,9 @@ public class EstanciasService {
 	
 	public Estancias findByIdE(Long id) {
 		return estanciasRepository.findByIdE(id);
+	}
+	
+	public List<Estancias> findByParadaEEquals(Paradas p) {
+		return estanciasRepository.findByParadaEEquals(p);
 	}
 }

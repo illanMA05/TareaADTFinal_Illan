@@ -3,8 +3,10 @@ package com.luisdbb.tarea3AD2024base.controller;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.net.http.HttpHeaders;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -21,7 +23,6 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
-
 import org.springframework.stereotype.Controller;
 //import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,13 +35,18 @@ import org.w3c.dom.Text;
 
 import com.luisdbb.tarea3AD2024base.config.StageManager;
 import com.luisdbb.tarea3AD2024base.modelo.Estancias;
+import com.luisdbb.tarea3AD2024base.modelo.Paradas;
 import com.luisdbb.tarea3AD2024base.modelo.Peregrino;
 import com.luisdbb.tarea3AD2024base.modelo.PeregrinoParadas;
 import com.luisdbb.tarea3AD2024base.modelo.Sesion;
+import com.luisdbb.tarea3AD2024base.services.EstanciasService;
+import com.luisdbb.tarea3AD2024base.services.ParadaService;
 import com.luisdbb.tarea3AD2024base.services.PeregrinoParadaService;
 import com.luisdbb.tarea3AD2024base.services.PeregrinoService;
 import com.luisdbb.tarea3AD2024base.view.FxmlView;
 
+
+import io.lacuna.bifurcan.durable.codecs.HashMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -52,7 +58,19 @@ import javafx.scene.control.Label;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JREmptyDataSource;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.design.JRDesignBand;
+import net.sf.jasperreports.engine.design.JRDesignExpression;
+import net.sf.jasperreports.engine.design.JRDesignParameter;
+import net.sf.jasperreports.engine.design.JRDesignSection;
+import net.sf.jasperreports.engine.design.JRDesignStaticText;
+import net.sf.jasperreports.engine.design.JRDesignTextField;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 
 @Controller
@@ -87,7 +105,11 @@ public class PeregrinoIdentificadoController implements Initializable{
 	@Autowired
 	private PeregrinoService pereService;
 	
+	@Autowired
+	private ParadaService paradaService;
 	
+	@Autowired
+	private EstanciasService estanciasService;
 	
 	@Autowired
 	private PeregrinoParadaService ppService;
@@ -146,10 +168,7 @@ public class PeregrinoIdentificadoController implements Initializable{
 	
 	@FXML
 	public void clickBtnEditar(ActionEvent event) {
-		Alert mensa = new Alert(Alert.AlertType.WARNING);
-		mensa.setTitle("FUNCION NO DISPONIBLE");
-		mensa.setContentText("ESTA FUNCION SERA IMPLEMENTADA A FUTURO");
-		mensa.showAndWait();
+		stageManager.switchScene(FxmlView.EDITARPEREGRINO);
 	}
 	
 		@FXML
@@ -289,6 +308,6 @@ public class PeregrinoIdentificadoController implements Initializable{
 			}
 		
 		}
-	
-
+		
+		
 }

@@ -159,6 +159,17 @@ public enum FxmlView {
 		public String getFxmlFile() {
 			return "/fxml/VerCarnets.fxml";
 		}
+	},
+	EDITARPEREGRINO{
+		@Override
+		public String getTitle() {
+			return getStringFromResourceBundle("editarPere.title");
+		}
+
+		@Override
+		public String getFxmlFile() {
+			return "/fxml/EditarPeregrino.fxml";
+		}
 	}
 	
 	

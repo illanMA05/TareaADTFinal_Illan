@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pacocarnet>
+	<id>1</id>
+	<fechaexp>2025-03-23</fechaexp>
+	<peregrino>
+		<nombre>paco</nombre>
+		<nacionalidad>Francia</nacionalidad>
+	</peregrino>
+	<hoy>2025-03-23</hoy>
+	<distanciaTotal>0.0</distanciaTotal>
+	<paradas>
+		<parada>
+			<orden>1</orden>
+			<nombre>villa</nombre>
+			<region>v</region>
+		</parada>
+	</paradas>
+	<estancias />
+</pacocarnet>

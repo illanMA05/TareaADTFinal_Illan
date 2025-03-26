@@ -47,10 +47,9 @@
                                     <Font name="Impact" size="24.0" />
                                  </font>
                               </Label>
-                              <TableView prefHeight="136.0" prefWidth="362.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                              <TableView fx:id="tablaCarnets" prefHeight="136.0" prefWidth="362.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                 <columns>
-                                  <TableColumn prefWidth="57.0" text="ID" />
-                                  <TableColumn prefWidth="176.0" text="NOMBRE" />
+                                  <TableColumn fx:id="clmNombre" prefWidth="233.0" text="NOMBRE" />
                                 </columns>
                                  <GridPane.margin>
                                     <Insets left="15.0" right="15.0" />

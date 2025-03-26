@@ -6,12 +6,15 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.luisdbb.tarea3AD2024base.modelo.Estancias;
+import com.luisdbb.tarea3AD2024base.modelo.Paradas;
 import com.luisdbb.tarea3AD2024base.modelo.Peregrino;
 
 @Repository
 public interface EstanciasRepository extends JpaRepository<Estancias,Long>{
 
 	List <Estancias> findByPeregrinoEEquals(Peregrino p);
+	
+	List <Estancias> findByParadaEEquals(Paradas p);
 	
 	Estancias findByIdE(Long id);
 }

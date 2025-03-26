@@ -194,7 +194,7 @@ public class AdminGeneralController implements Initializable{
 
 		docPeregrinos.append("Peregrino", listaPeres);
 
-		String nombreBackup = "Backup_Peregrinos_" + fecha;
+		String nombreBackup = "Backup_Peregrinos";
 		mongoTemplate.getCollection(nombreBackup).insertOne(docPeregrinos);
 		
 		Alert mensaje = new Alert(Alert.AlertType.INFORMATION);

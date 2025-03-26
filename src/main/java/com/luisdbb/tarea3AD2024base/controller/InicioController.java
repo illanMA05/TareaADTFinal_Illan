@@ -139,8 +139,6 @@ public class InicioController implements Initializable{
 	@Override
 	public void initialize(java.net.URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		ConexionExistDB cEdb = new ConexionExistDB();
-		cEdb.ConexionExist();
 		
 	}
 
